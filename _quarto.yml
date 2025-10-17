@@ -1,0 +1,49 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "24BSE2113D- Partial Differential Equation, Transform and Optimization"
+  subtitle: "Computational Methods for Electronics & Robotics Lab"
+  description: "Computational Methods for Electronics & Robotics Lab"
+  author: "Siju K S"
+  date: "today"
+  search: true
+  repo-url: https://github.com/sijuswamyresearch/PDE-T-and-OT
+  downloads: [pdf, epub]
+  sharing: [twitter, facebook]
+  chapters:
+    - index.qmd
+    - part: "Fundamentals"
+      chapters: 
+        - 01-intro-python.qmd
+    - part: "Partial Differential Equations"
+      chapters:
+        - 02-pde-numerical.qmd
+    - part: "Laplace Transforms & System Analysis"
+      chapters:
+        - 03-laplace-basics.qmd
+        - 04-laplace-apps.qmd
+    - part: "Optimization"
+      chapters:
+        - 05-optimization.qmd
+    - part: "Capstone Projects"
+      chapters:
+        - 06-capstone-project.qmd
+        - 07-capstone-project-2.qmd
+  page-footer: 
+    left: "B.Tech ECE/Robotics Lab"
+    right: 
+      - icon: github
+        href: https://github.com/sijuswamyresearch/PDE-T-and-OT # Optional link to a repo
+
+format:
+  html:
+    theme: cosmo
+    code-fold: true
+    code-tools: false
+  pdf:
+    documentclass: scrreprt
+# To execute python code
+execute:
+  freeze: auto # Caches results to speed up rendering
